@@ -1,0 +1,111 @@
+@keyframes intro{
+	from{
+		transform: translate(0px,-50px);
+		color: #000000;
+			
+	}
+	to{
+		transform: translate(0px,0px);
+		color: #ffffff;
+	}
+}
+@keyframes introplot{
+	from{
+		transform: translate(0px,50px);
+		color: #000000;
+			
+	}
+	to{
+		transform: translate(0px,0px);
+		color: #ffffff;
+	}
+}
+#classy {
+	width:100%;
+	color: #000000;
+	background-color: rgba(0,0,0,0.60)	;
+	font-family: courier;
+	text-align : center;
+	position:fixed;
+	-webkit-font-smoothing: subpixel-antialiased;
+    animation-name: intro;
+	animation-timing-function: ease-in-out;
+	animation-duration: 0.5s;
+	transform: scale3d(3.0,3.0);
+	transition: color 0.5s;
+	color: #ffffff;
+	transform: scale3d(1.0,1.0,1.0);
+	transform: translateY(5);	
+	/*	background-image : url("../images/pulse.png"), url("../images/revpulse.png");
+	background-size : 30px 20px ;
+	background-repeat : no-repeat;
+	background-position: 44.5% 50%, 55.3% 50%;
+*/	letter-spacing: 2px;
+    transition: border 0.5s;
+	border : 1px outset #ffffff;
+	border-left-color: #003f4f;
+	border-right-color: #003f4f;
+	padding: 5px;
+	
+}
+ul.navbar {
+	list-style-type: none;
+	margin : 0;
+	padding: 0;
+	width:   20%;
+	position: fixed;
+	height:100%;
+	overflow:auto;
+	font-family: courier;
+	-webkit-font-smoothing: subpixel-antialiased;
+	font-size: 12px;
+	background-color:rgba(20,20,20,0.2);
+	animation-name: intro;
+	animation-timing-function: ease-in-out;
+	animation-duration: 0.5s;
+}
+li a {
+        
+		display: block;
+		color: #f1f1f4;
+		padding: 8px 0 90px 16px;
+		text-decoration: none;
+transition: background-color 0.5s;		
+}
+li a:hover:not(.active) {
+	background-color: #152f4f;
+	color: white;
+	transition: background-color 0.5s;
+}	
+.active {
+	 background-color: #354f8f;
+	 background :linear-gradient(#112548,#354f8f);
+	 color: white;
+}
+.myIframe {
+position: relative;
+padding-bottom: 30%;
+padding-top: 30px;
+height: 0;
+overflow: auto; 
+-webkit-overflow-scrolling:touch; //<<--- THIS IS THE KEY 
+border: solid black 1px;
+margin-left:25%;
+} 
+.myIframe iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+body {
+   
+	font-family: console;
+	-webkit-font-smoothing: subpixel-antialiased;
+	/*background-color: #003f4f;*/
+	background-image : url("../images/poly.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+		
+}
