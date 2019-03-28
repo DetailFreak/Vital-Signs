@@ -103,8 +103,8 @@ body {
    
 	font-family: console;
 	-webkit-font-smoothing: subpixel-antialiased;
-	/*background-color: #003f4f;*/
-	background-image : url("../images/poly.png");
+	background-color: #003f4f;
+	/*background-image : url("../images/poly.png");*/
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 		
